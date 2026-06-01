@@ -1,0 +1,31 @@
+project_id = "fjyhehtzryybbpuxqqdo"
+
+[functions.create-checkout]
+verify_jwt = false
+
+[functions.customer-portal]
+verify_jwt = false
+
+[functions.check-subscription]
+verify_jwt = false
+
+[functions.upload-post-debug-status]
+verify_jwt = false
+
+[functions.youtube-native-oauth-start]
+verify_jwt = false
+
+[functions.youtube-native-oauth-callback]
+verify_jwt = false
+
+[functions.youtube-native-disconnect]
+verify_jwt = false
+
+[functions.youtube-native-callback]
+verify_jwt = false
+
+[functions.upload-post-admin-slot-status]
+verify_jwt = false
+
+[functions.upload-post-admin-prune]
+verify_jwt = false
