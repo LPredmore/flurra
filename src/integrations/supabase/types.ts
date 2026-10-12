@@ -498,6 +498,7 @@ export type Database = {
           id: number
           linkedin_enabled: boolean
           name: string | null
+          playlist_title: string | null
           sort_order: number
           updated_at: string
           user_id: string
@@ -509,6 +510,7 @@ export type Database = {
           id?: number
           linkedin_enabled?: boolean
           name?: string | null
+          playlist_title?: string | null
           sort_order?: number
           updated_at?: string
           user_id: string
@@ -520,6 +522,7 @@ export type Database = {
           id?: number
           linkedin_enabled?: boolean
           name?: string | null
+          playlist_title?: string | null
           sort_order?: number
           updated_at?: string
           user_id?: string
@@ -2331,6 +2334,39 @@ export type Database = {
             referencedColumns: ["id"]
           },
         ]
+      }
+      upload_post_profiles: {
+        Row: {
+          connected_platforms: Json
+          created_at: string
+          last_synced_at: string | null
+          provisioning_error: string | null
+          provisioning_status: string
+          updated_at: string
+          user_id: string
+          username: string
+        }
+        Insert: {
+          connected_platforms?: Json
+          created_at?: string
+          last_synced_at?: string | null
+          provisioning_error?: string | null
+          provisioning_status?: string
+          updated_at?: string
+          user_id: string
+          username: string
+        }
+        Update: {
+          connected_platforms?: Json
+          created_at?: string
+          last_synced_at?: string | null
+          provisioning_error?: string | null
+          provisioning_status?: string
+          updated_at?: string
+          user_id?: string
+          username?: string
+        }
+        Relationships: []
       }
       user_content_instructions: {
         Row: {
